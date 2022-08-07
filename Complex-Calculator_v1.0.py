@@ -19,7 +19,7 @@ def deg2rad(num1):
     # return the result
     return num1*np.pi/180
 
-# define function to convert a complex number in rectangular format to polar
+# define function to convert a complex number from rectangular to polar
 def rec2pol(num1,num2):
 
     # check if both entries are null
