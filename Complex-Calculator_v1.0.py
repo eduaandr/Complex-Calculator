@@ -68,6 +68,6 @@ def polar_calculator(num1):
     print("%.3f \u2220 %.2f\u00B0" % rec2pol(sum_real,sum_imag))    
     return None
 
-#enter the operation in line below (format: (mod,angº))
+# enter the operation in line below in the polar format)
 polar_calculator((385,34.5)+(348.9,-94)+(316.3,158.9))
 
