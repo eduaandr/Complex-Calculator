@@ -11,13 +11,13 @@ import numpy as np
 def rad2deg(num1):
 
     # return the result
-    return num1*180/np.pi
+    return num1 * 180 / np.pi
 
 # define function to convert degrees to radians
 def deg2rad(num1):
 
     # return the result
-    return num1*np.pi/180
+    return num1 * np.pi / 180
 
 # define function to convert a complex number from rectangular to polar
 def rec2pol(num1,num2):
@@ -32,19 +32,19 @@ def rec2pol(num1,num2):
     elif num1 == 0 and num2 != 0:
 
         # return the result
-        return (np.sqrt((num1)**2+(num2)**2),90)
+        return (np.sqrt((num1)**2 + (num2)**2),90)
 
     # check if it is a complex number in the 3th and 4th quadrants
     elif num2 < 0:
 
         # return the result
-        return (np.sqrt((num1)**2+(num2)**2),rad2deg(np.arctan(num2/num1))-180)
+        return (np.sqrt((num1)**2 + (num2)**2),rad2deg(np.arctan(num2 / num1)) - 180)
 
     # if not, it means it is in the 1st or 2nd quadrants
     else:
 
         # return the result
-        return (np.sqrt((num1)**2+(num2)**2),rad2deg(np.arctan(num2/num1)))
+        return (np.sqrt((num1)**2 + (num2)**2),rad2deg(np.arctan(num2 / num1)))
 
 # define function to perform the calculation
 def polar_calculator(num1):
@@ -56,13 +56,13 @@ def polar_calculator(num1):
     sum_imag = 0
 
     # scans all input registries
-    for i in range(0,len(num1)-1,2):
+    for i in range(0,len(num1) - 1,2):
         
         # perform the addition of real part
-        sum_real += num1[i]*np.cos(deg2rad(num1[i+1]))
+        sum_real += num1[i] * np.cos(deg2rad(num1[i + 1]))
 
         # perform the addition of imaginary part
-        sum_imag += num1[i]*np.sin(deg2rad(num1[i+1]))
+        sum_imag += num1[i] * np.sin(deg2rad(num1[i + 1]))
 
     # print the result
     print("%.3f \u2220 %.2f\u00B0" % rec2pol(sum_real,sum_imag))    
