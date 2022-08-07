@@ -65,9 +65,10 @@ def polar_calculator(num1):
         sum_imag += num1[i] * np.sin(deg2rad(num1[i + 1]))
 
     # print the result
-    print("%.3f \u2220 %.2f\u00B0" % rec2pol(sum_real,sum_imag))    
+    print("%.3f \u2220 %.2f\u00B0" % rec2pol(sum_real,sum_imag))
+    
+    # return the result
     return None
 
 # enter the operation in line below in the polar format)
 polar_calculator((385,34.5)+(348.9,-94)+(316.3,158.9))
-
