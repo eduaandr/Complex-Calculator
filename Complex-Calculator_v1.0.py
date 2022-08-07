@@ -1,5 +1,5 @@
 # Complex-Calculator
-# Description: Program that performs complex operations with rectangular entries and outputs the result in polar format
+# Description: Program that performs complex operations with complex numbers and outputs the result in the polar format
 # # Author: Eduardo Andrade
 # Date: 2017/06/16
 # Version: 1.0
