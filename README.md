@@ -1,2 +1,2 @@
 # Complex-Calculator
-Program that calculates the addition and subtraction of complex numbers in the rectangular format and presents the result in the polar format.
+Program that performs complex operations with rectangular entries and outputs the result in polar format
