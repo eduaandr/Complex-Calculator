@@ -55,7 +55,7 @@ def polar_calculator(num1):
     # initiate the integer sum_imag
     sum_imag = 0
 
-    # scans all input registries. Step of 2 necessary because num1 takes module and angle in sequence
+    # scans all input registries. Step of 2 necessary because num1 receives module and angle as independent inputs
     for i in range(0,len(num1) - 1,2):
         
         # perform the addition of real part
