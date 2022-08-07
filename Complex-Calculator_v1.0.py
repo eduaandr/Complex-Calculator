@@ -71,4 +71,4 @@ def polar_calculator(num1):
     return None
 
 # enter the operation in line below in the polar format
-polar_calculator((385,34.5)+(348.9,-94)+(316.3,158.9))
+polar_calculator((385,34.5) + (348.9,-94) + (316.3,158.9))
